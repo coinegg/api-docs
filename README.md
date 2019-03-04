@@ -7,8 +7,8 @@
 
 
 
-| 文档名         | 描述             |
-| :------------- | :--------------- |
-| rese_api_cn.md | 通用Rest接口定义 |
-| errors_cn.md   | 错误代码及含义   |
+| 文档名                                                       | 描述             |
+| :----------------------------------------------------------- | :--------------- |
+| [rese_api_cn.md](https://github.com/coinegg/api-docs/blob/master/rese_api_cn.md) | 通用Rest接口定义 |
+| [errors_cn.md](https://github.com/coinegg/api-docs/blob/master/errors_cn.md) | 错误代码及含义   |
 
