@@ -291,7 +291,7 @@ POST /api/v1/balance/
 
  
 
-### 2. 挂单查询（Trade_list）
+### 2. 查看账户当前挂单（Trade_list）
 
 **说明**
 
@@ -344,4 +344,150 @@ POST /api/v1/trade_list/region/{region}
     ]
 }
 ```
+
+
+
+### 3. 查询订单详情
+
+**链接**
+
+```
+POST /api/v1/trade_view/region/{region}
+```
+
+**请求参数**
+
+| 参数      | 示例 | 说明                                     |
+| --------- | ---- | ---------------------------------------- |
+| key       |      | API key                                  |
+| signature |      | 签名                                     |
+| nonce     |      | nonce                                    |
+| region    | btc  | 交易区，可选参数：btc / usdt / eth / usc |
+| id        |      | 挂单ID                                   |
+| coin      | xrp  | 交易币种                                 |
+
+**返回参数**
+
+| 参数               | 说明                                                         |
+| ------------------ | ------------------------------------------------------------ |
+| id                 | 挂单ID                                                       |
+| datetime           | 挂单时间                                                     |
+| type               | 挂单类型                                                     |
+| price              | 价格                                                         |
+| amount_original    | 下单数量                                                     |
+| amount_outstanding | 当前剩余数量                                                 |
+| status             | 状态：new(新挂单), open(开放交易), cancelled(撤消), closed(完全成交) |
+
+**返回示例**
+
+```json
+{
+    "result":true,
+    "data":{
+        "id":28,
+        "datetime":"2016-10-26 14:47:54",
+        "type":"sell",
+        "price":0.000123,
+        "amount_original":1213,
+        "amount_outstanding":1213,
+        "status":"open"
+    }
+}
+```
+
+
+
+### 4.撤销订单
+
+**链接**
+
+```
+POST /api/v1/trade_cancel/region/{region}
+```
+
+**请求参数**
+
+| 参数      | 示例 | 说明                                     |
+| --------- | ---- | ---------------------------------------- |
+| key       |      | API key                                  |
+| signature |      | 签名                                     |
+| nonce     |      | nonce                                    |
+| region    | btc  | 交易区，可选参数：btc / usdt / eth / usc |
+| id        |      | 挂单ID                                   |
+| coin      | xrp  | 交易币种                                 |
+
+**返回参数**
+
+| 参数   | 说明                    |
+| ------ | ----------------------- |
+| id     | 挂单ID                  |
+| result | true(成功), false(失败) |
+
+**返回示例**
+
+```json
+{
+    "result":true,
+    "id":"11"
+}
+```
+
+
+
+### 5.下单
+
+**链接**
+
+```
+POST /api/v1/trade_add/region/{region}
+```
+
+**请求参数**
+
+| 参数      | 示例 | 说明                                     |
+| --------- | ---- | ---------------------------------------- |
+| key       |      | API key                                  |
+| signature |      | 签名                                     |
+| nonce     |      | nonce                                    |
+| region    | btc  | 交易区，可选参数：btc / usdt / eth / usc |
+| amount    |      | 挂单ID                                   |
+| coin      | xrp  | 交易币种                                 |
+| price     |      | 购买价格                                 |
+| type      |      | 挂单类型                                 |
+
+**返回参数**
+
+| 参数   | 说明                    |
+| ------ | ----------------------- |
+| id     | 挂单ID                  |
+| result | true(成功), false(失败) |
+
+**返回示例**
+
+```json
+{
+    "result":true,
+    "id":"11"
+}
+```
+
+
+
+### 6.数据类型
+
+| 字段      | 数据类型 |
+| --------- | -------- |
+| *_balance | float    |
+| id        | int      |
+| datetime  | datetime |
+| since     | int      |
+| type      | string   |
+| price     | float    |
+| amount    | float    |
+| status    | string   |
+| trade_id  | int      |
+| fee       | float    |
+| result    | bool     |
+| message   | string   |
+| address   | string   |
 
