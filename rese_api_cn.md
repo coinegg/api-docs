@@ -41,7 +41,7 @@ $param = [
 
 
 
-## 行情接口
+## 公开API接口
 
 
 
@@ -244,4 +244,104 @@ GET /api/v1/kline/region/{region}?coin={coin}
 ```
 
  
+
+## 账户接口
+
+
+
+### 1. 账户信息（Account Balance）
+
+**链接**
+
+```
+POST /api/v1/balance/
+```
+
+**请求参数**
+
+| 参数      | 说明    |
+| --------- | ------- |
+| key       | API key |
+| signature | 签名    |
+| nonce     | nonce   |
+
+**返回参数**
+
+| 参数        | 说明        |
+| ----------- | ----------- |
+| eth_balance | ETH总余额   |
+| eth_lock    | ETH冻结余额 |
+
+**返回示例**
+
+```json
+{
+    "result":true,
+    "data":{
+        "uid":"1",
+        "xas_balance":1,
+        "xas_lock":0,
+        "eth_balance":1,
+        "eth_lock":0,
+        "btc_balance":1,
+        "btc_lock":0
+    }
+}
+```
+
+ 
+
+### 2. 挂单查询（Trade_list）
+
+**说明**
+
+-   您指定时间后的挂单，可以根据类型查询，比如查看正在挂单和全部挂单
+
+**链接**
+
+```
+POST /api/v1/trade_list/region/{region}
+```
+
+**请求参数**
+
+| 参数      | 示例       | 说明                                     |
+| --------- | ---------- | ---------------------------------------- |
+| key       |            | API key                                  |
+| signature |            | 签名                                     |
+| nonce     |            | nonce                                    |
+| region    | btc        | 交易区，可选参数：btc / usdt / eth / usc |
+| since     | 1530374400 | unix时间戳，如果为0返回所有的值          |
+| coin      | xrp        | 交易币种                                 |
+| type      | open       | 挂单类型（open:正在挂单 / all:所有挂单） |
+
+**返回参数**
+
+| 参数               | 说明         |
+| ------------------ | ------------ |
+| id                 | 挂单ID       |
+| coin               | 交易币种     |
+| datetime           | 挂单时间     |
+| type               | 挂单类型     |
+| price              | 价格         |
+| amount_original    | 下单数量     |
+| amount_outstanding | 当前剩余数量 |
+
+**返回示例**
+
+```json
+{
+    "result":true,
+    "data":[
+        {
+            "id":"28",
+            "datetime":"2016-10-26 14:47:54",
+            "type":"sell",
+            "price":0.000123,
+            "amount_original":1213,
+            "amount_outstanding":1213
+        }
+    ]
+}
+```
 
