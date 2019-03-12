@@ -13,4 +13,7 @@
 | :----------------------------------------------------------- | :--------------- |
 | [rese_api_cn.md](https://github.com/coinegg/api-docs/blob/master/rese_api_cn.md) | 通用Rest接口定义 |
 | [errors_cn.md](https://github.com/coinegg/api-docs/blob/master/errors_cn.md) | 错误代码及含义   |
+| [Java demo](https://github.com/coinegg/api-docs/blob/master/demo/java/Main.java) |                  |
+| [C# demo](https://github.com/coinegg/api-docs/tree/master/demo/c%23) |                  |
+| [Js demo](https://github.com/coinegg/api-docs/tree/master/demo/js) |                  |
 
