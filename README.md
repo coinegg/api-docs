@@ -16,4 +16,7 @@
 | [Java demo](https://github.com/coinegg/api-docs/blob/master/demo/java/Main.java) |                  |
 | [C# demo](https://github.com/coinegg/api-docs/tree/master/demo/c%23) |                  |
 | [Js demo](https://github.com/coinegg/api-docs/tree/master/demo/js) |                  |
+| [Go demo](https://github.com/coinegg/api-docs/tree/master/demo/go) |                  |
+| [Php demo](https://github.com/coinegg/api-docs/tree/master/demo/php) |                  |
+| [Python demo](https://github.com/coinegg/api-docs/tree/master/demo/python) |                  |
 
