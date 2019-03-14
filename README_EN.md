@@ -10,13 +10,13 @@ CoinEgg API Document
 
 Common Rest Interface:
 
-<https://github.com/coinegg/api-docs/blob/master/rese_api_cn.md>
+<https://github.com/coinegg/api-docs/blob/master/rese_api_en.md>
 
 
 
 Error code table:
 
-<https://github.com/coinegg/api-docs/blob/master/errors_cn.md>
+<https://github.com/coinegg/api-docs/blob/master/errors_en.md>
 
 
 

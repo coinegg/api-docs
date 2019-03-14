@@ -10,13 +10,13 @@ CoinEgg API文档
 
 开放Rest接口:
 
-<https://github.com/coinegg/api-docs/blob/master/rese_api_en.md>
+<https://github.com/coinegg/api-docs/blob/master/rese_api_cn.md>
 
 
 
 错误代码:
 
-<https://github.com/coinegg/api-docs/blob/master/errors_en.md>
+<https://github.com/coinegg/api-docs/blob/master/errors_cn.md>
 
 
 
