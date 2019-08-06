@@ -38,6 +38,7 @@ def getBalance():
 
     params['signature'] = get_signature(params)
     print("signature:"+params['signature'])
+    params = OrderedDict(sorted(params.items(), key=lambda item:item[0]))
     response = requests.post(url+"/api/v1/balance/", data = params)
     return response.text
 
