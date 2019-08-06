@@ -4,6 +4,7 @@ import hashlib
 import time
 import json
 import requests
+from collections import OrderedDict
 
 
 url         = "https://api.coinegg.im"
