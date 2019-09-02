@@ -38,4 +38,4 @@ PYTHON DEMO: <https://github.com/coinegg/api-docs/tree/master/demo/python>
 
 使用API时如果遇到麻烦,请加入我们的官方电报,我们将尽力帮助您。
 
-CoinEgg API 电报群: <https://t.me/joinchat/GpUA5VGKsoMNo8HuALxLFQ>
+CoinEgg API 电报群: <https://t.me/joinchat/HkE5hhFX9c-mK82D-Ojtvg>
