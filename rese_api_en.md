@@ -2,7 +2,7 @@
 
 ## Essential information
 
-#### 1. API Request Domain Name：https://api.coinegg.im
+#### 1. API Request Domain Name：https://api.coinegg.vip
 
 #### 2. Request process description
 
