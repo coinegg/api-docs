@@ -450,10 +450,10 @@ POST /api/v1/trade_add/region/{region}
 | signature  |         | signature                                                 |
 | nonce      |         | nonce                                                     |
 | region     | btc     | Trading area, optional parameters：btc / usdt / eth / usc |
-| amount     |         | List Id                                                   |
+| amount     |         | Transaction volume                                                   |
 | coin       | xrp     | Currency Code Of Transaction                              |
 | price      |         | Purchase price                                            |
-| type       |         | Type of list                                              |
+| type       |         | Type of Transaction, 'buy' or 'sell'                                              |
 
 **Return parameter**
 
