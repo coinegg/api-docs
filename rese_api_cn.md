@@ -450,10 +450,10 @@ POST /api/v1/trade_add/region/{region}
 | signature |      | 签名                                     |
 | nonce     |      | nonce                                    |
 | region    | btc  | 交易区，可选参数：btc / usdt / eth / usc |
-| amount    |      | 挂单ID                                   |
+| amount    |      | 挂单数量                                   |
 | coin      | xrp  | 交易币种                                 |
 | price     |      | 购买价格                                 |
-| type      |      | 挂单类型                                 |
+| type      |      | 挂单类型, 可选参数buy或者sell                                 |
 
 **返回参数**
 
