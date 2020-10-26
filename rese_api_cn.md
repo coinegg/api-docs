@@ -2,7 +2,7 @@
 
 ## 基本信息
 
-#### 1. API请求域名：https://api.coinegg.vip
+#### 1. API请求域名：https://api.coinegg.vip 或 https://api.coinegg.in
 
 #### 2. 请求过程说明
 
